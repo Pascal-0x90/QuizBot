@@ -263,6 +263,9 @@ class Quizzer(commands.Cog):
 
             # Print out correct answer
             title = "Correct Answer"
+            # if no one, then no one
+            if len(crct) == 0:
+                crct.append("No one lol")
             msg = {
                 "Correct Answer:": f"{correct}. {answers[correct]}",
                 "Who Got it?": '\n'.join(crct)
