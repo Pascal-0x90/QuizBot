@@ -1,0 +1,246 @@
+{
+    "List directories in current directory and show hidden files" : {
+        "answers": {
+            "a" : "ls",
+            "b" : "ls -a",
+            "c" : "ls --all",
+            "d" : "ls -al"
+        },
+        "correct" : "d"
+    },
+    "Change from current directory to a sub directory and list the contents of the current directory" : {
+        "answers": {
+            "a" : "cd <dir> + dir",
+            "b" : "cd <dir> > ls",
+            "c" : "cd <dir> && ls",
+            "d" : "cd <dir> AND ls",
+        },
+        "correct" : "c"
+    },
+    "Remove a file" : {
+        "answers": {
+            "a" : "sudo rm -rf / && 'Yes'",
+            "b" : "rm <file>",
+            "c" : "mv <file> > trash",
+            "d" : "removeth thy junk",
+        },
+        "correct" : "b"
+    },
+    "Create a symbolic link to <file>" : {
+        "answers": {
+            "a" : "ln <file> <link>",
+            "b" : "ln -r <file> <link>",
+            "c" : "ln -s <file> <link>",
+            "d" : "ln -l <file> <link>",
+        },
+        "correct" : "c"
+    },
+    "You've opened vi or vim to edit a file. How you save and get out of vim?" : {
+        "answers": {
+            "a" : ":sq",
+            "b" : ":wq",
+            "c" : "/wq",
+            "d" : "<mash your keyboard>",
+        },
+        "correct" : "b"
+    },
+    "Change the permissions of a file such that the owner can read, write, and execute, and the group and world can read and execute" : {
+        "answers": {
+            "a" : "chmod 777",
+            "b" : "chmod 711",
+            "c" : "chmod 755",
+            "d" : "chmod 744",
+        },
+        "correct" : "c"
+    },
+    "Search for a pattern in the output of a command" : {
+        "answers": {
+            "a" : "grep -r <pattern> <dir>",
+            "b" : "<command> grep <pattern>",
+            "c" : "grep <pattern> <files>",
+            "d" : "<command> | grep <pattern>",
+        },
+        "correct" : "d"
+    },
+    "Bring the most recent job to the foreground" : {
+        "answers": {
+            "a" : "top",
+            "b" : "fg",
+            "c" : "df",
+            "d" : "bg",
+        },
+        "correct" : "b"
+    },
+    "Extract the files from file.tar" : {
+        "answers": {
+            "a" : "tar xf",
+            "b" : "gzip -d",
+            "c" : "tar xjf",
+            "d" : "tar cf",
+        },
+        "correct" : "a"
+    },
+    "Extract a tar using gzip" : {
+        "answers": {
+            "a" : "tar xjf",
+            "b" : "tar cjf",
+            "c" : "tar xzf",
+            "d" : "gzip -d",
+        },
+        "correct" : "c"
+    },
+    "Get DNS information for a particular domain" : {
+        "answers": {
+            "a" : "wget",
+            "b" : "dig",
+            "c" : "ping",
+            "d" : "traceroute",
+        },
+        "correct" : "b"
+    },
+    "Install a package (debian)" : {
+        "answers": {
+            "a" : "rpm -Uvh",
+            "b" : "make install",
+            "c" : "./configure",
+            "d" : "dpkg -i",
+        },
+        "correct" : "d"
+    },
+    "Stop a command and resume with fg or bg" : {
+        "answers": {
+            "a" : "Ctrl+Z",
+            "b" : "Ctrl+C",
+            "c" : "Ctrl+D",
+            "d" : "Ctrl+U",
+        },
+        "correct" : "a"
+    },
+    "Repeat the last command" : {
+        "answers": {
+            "a" : "Ctrl+R",
+            "b" : "<up arrow on keyboard>",
+            "c" : "!!",
+            "d" : "repeat",
+        },
+        "correct" : "c"
+    },
+    "Erase the whole line in terminal without using backspace or delete keys" : {
+        "answers": {
+            "a" : "Ctrl+W",
+            "b" : "Ctrl+U",
+            "c" : "Ctrl+Alt+Enter",
+            "d" : "Ctrl+Shift+Esc",
+        },
+        "correct" : "b"
+    },
+    "Default package manager for Arch based linux" : {
+        "answers": {
+            "a" : "pacman",
+            "b" : "yay",
+            "c" : "brew",
+            "d" : "apt",
+        },
+        "correct" : "a"
+    },
+    "Find all instances of a file" : {
+        "answers": {
+            "a" : "find -a <file>",
+            "b" : "locate <file>",
+            "c" : "grep -r <pattern> <dir>",
+            "d" : "grep <pattern> <files>",
+        },
+        "correct" : "b"
+    },
+    "Show memory and swap usage" : {
+        "answers": {
+            "a" : "df",
+            "b" : "du",
+            "c" : "uname -a",
+            "d" : "free",
+        },
+        "correct" : "d"
+    },
+    "Show kernel information" : {
+        "answers": {
+            "a" : "uname -a",
+            "b" : "whoami",
+            "c" : "id",
+            "d" : "uptime",
+        },
+        "correct" : "a"
+    },
+    "Show CPU information" : {
+        "answers": {
+            "a" : "cat /proc/buddyinfo",
+            "b" : "cat /proc/meminfo",
+            "c" : "cat /proc/cpuinfo",
+            "d" : "locate cpuinfo",
+        },
+        "correct" : "c"
+    },
+    "Continue a stopped download" : {
+        "answers": {
+            "a" : "wget <file>",
+            "b" : "wget -x <file>",
+            "c" : "wget -c <file>",
+            "d" : "wget -nv <file>",
+        },
+        "correct" : "c"
+    },
+    "Copy dir1 to dir2; create dir2 if it doesn't already exit" : {
+        "answers": {
+            "a" : "cp dir1 dir2",
+            "b" : "cp -f dir1 dir2",
+            "c" : "mv dir1 dir2",
+            "d" : "cp -r dir1 dir2",
+        },
+        "correct" : "d"
+    },
+    "Display all running processes" : {
+        "answers": {
+            "a" : "ps",
+            "b" : "top",
+            "c" : "fg",
+            "d" : "task manager",
+        },
+        "correct" : "b"
+    },
+    "Output all the contents of a file" : {
+        "answers": {
+            "a" : "more",
+            "b" : "head",
+            "c" : "tail",
+            "d" : "foot",
+        },
+        "correct" : "a"
+    },
+    "Show the working directory and show contents of directory" : {
+        "answers": {
+            "a" : "cd dir && ls",
+            "b" : "mkdir dir && pwd",
+            "c" : "pwd && ls",
+            "d" : "pwd || ls",
+        },
+        "correct" : "c"
+    },
+    "Create or update a file" : {
+        "answers": {
+            "a" : "touch",
+            "b" : "rm",
+            "c" : "chmod +x",
+            "d" : "cat",
+        },
+        "correct" : "a"
+    },
+    "Create a virtual enviroment for a specific version of Python" : {
+        "answers": {
+            "a" : "virtualenv venv",
+            "b" : "pip install virtualenv",
+            "c" : "python venv",
+            "d" : "virtualenv -p /usr/bin/python3.8 py3.8_venv",
+        },
+        "correct" : "d"
+    },
+
+}
