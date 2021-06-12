@@ -235,26 +235,40 @@ class Quizzer(commands.Cog):
                     whodid[react.emoji].append(u)
 
             # Who got it right?
+            crct = []
             if correct == "a":
                 # Give points to those who deserve it
                 for user in whodid[a]:
                     if user not in whodid[b] and user not in whodid[c] and user not in whodid[d]:
                         quiz['players'][user] += 1
+                        crct.append(user.name)
             elif correct == "b":
                 # Give points to those who deserve it
                 for user in whodid[b]:
                     if user not in whodid[a] and user not in whodid[c] and user not in whodid[d]:
                         quiz['players'][user] += 1
+                        crct.append(user.name)
             elif correct == "c":
                 # Give points to those who deserve it
                 for user in whodid[c]:
                     if user not in whodid[b] and user not in whodid[a] and user not in whodid[d]:
                         quiz['players'][user] += 1
+                        crct.append(user.name)
             elif correct == "d":
                 # Give points to those who deserve it
                 for user in whodid[d]:
                     if user not in whodid[b] and user not in whodid[c] and user not in whodid[a]:
                         quiz['players'][user] += 1
+                        crct.append(user.name)
+
+            # Print out correct answer
+            title = "Correct Answer"
+            msg = {
+                "Correct Answer:": f"{correct}. {answers[correct]}",
+                "Who Got it?": '\n'.join(crct)
+            }
+            embed = make_embed(title, msg)
+            await ctx.message.channel.send(embed=embed)
 
             # Print out the scoreboard
             scrbrd = make_scoreboard(quiz['players'])
