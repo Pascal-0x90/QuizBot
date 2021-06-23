@@ -341,5 +341,40 @@
         },
         "correct" : "c"
     },
-
+    "Create a name for your own terminal command or sequence of commands" : {
+        "answers": {
+            "a" : "mv",
+            "b" : "uname",
+            "c" : "w",
+            "d" : "alias",
+        },
+        "correct" : "d"
+    },
+    "Retrieve information and files from URLs or internet addresses" : {
+        "answers": {
+            "a" : "curl",
+            "b" : "git clone",
+            "c" : "apt",
+            "d" : "links",
+        },
+        "correct" : "a"
+    },
+    "Show the size, used space, and available space of mounted filesystems" : {
+        "answers": {
+            "a" : "free",
+            "b" : "df",
+            "c" : "diff",
+            "d" : "top",
+        },
+        "correct" : "b"
+    },
+    "Obtain only the kernel release information" : {
+        "answers": {
+            "a" : "uname -a",
+            "b" : "uname -s",
+            "c" : "uname -r",
+            "d" : "uname -v",
+        },
+        "correct" : "c"
+    },
 }
