@@ -1,0 +1,380 @@
+{
+  "List directories in current directory and show hidden files": {
+    "answers": {
+      "a": "ls",
+      "b": "ls -a",
+      "c": "ls --all",
+      "d": "ls -al"
+    },
+    "correct": "d"
+  },
+  "Change from current directory to a sub directory and list the contents of the current directory": {
+    "answers": {
+      "a": "cd <dir> + dir",
+      "b": "cd <dir> > ls",
+      "c": "cd <dir> && ls",
+      "d": "cd <dir> AND ls"
+    },
+    "correct": "c"
+  },
+  "Remove a file": {
+    "answers": {
+      "a": "sudo rm -rf / && 'Yes'",
+      "b": "rm <file>",
+      "c": "mv <file> > trash",
+      "d": "removeth thy junk"
+    },
+    "correct": "b"
+  },
+  "Create a symbolic link to <file>": {
+    "answers": {
+      "a": "ln <file> <link>",
+      "b": "ln -r <file> <link>",
+      "c": "ln -s <file> <link>",
+      "d": "ln -l <file> <link>"
+    },
+    "correct": "c"
+  },
+  "You've opened vi or vim to edit a file. How you save and get out of vim?": {
+    "answers": {
+      "a": ":sq",
+      "b": ":wq",
+      "c": "/wq",
+      "d": "<mash your keyboard>"
+    },
+    "correct": "b"
+  },
+  "Change the permissions of a file such that the owner can read, write, and execute, and the group and world can read and execute": {
+    "answers": {
+      "a": "chmod 777",
+      "b": "chmod 711",
+      "c": "chmod 755",
+      "d": "chmod 744"
+    },
+    "correct": "c"
+  },
+  "Search for a pattern in the output of a command": {
+    "answers": {
+      "a": "grep -r <pattern> <dir>",
+      "b": "<command> grep <pattern>",
+      "c": "grep <pattern> <files>",
+      "d": "<command> | grep <pattern>"
+    },
+    "correct": "d"
+  },
+  "Bring the most recent job to the foreground": {
+    "answers": {
+      "a": "top",
+      "b": "fg",
+      "c": "df",
+      "d": "bg"
+    },
+    "correct": "b"
+  },
+  "Extract the files from file.tar": {
+    "answers": {
+      "a": "tar xf",
+      "b": "gzip -d",
+      "c": "tar xjf",
+      "d": "tar cf"
+    },
+    "correct": "a"
+  },
+  "Extract a tar using gzip": {
+    "answers": {
+      "a": "tar xjf",
+      "b": "tar cjf",
+      "c": "tar xzf",
+      "d": "gzip -d"
+    },
+    "correct": "c"
+  },
+  "Get DNS information for a particular domain": {
+    "answers": {
+      "a": "wget",
+      "b": "dig",
+      "c": "ping",
+      "d": "traceroute"
+    },
+    "correct": "b"
+  },
+  "Install a package (debian)": {
+    "answers": {
+      "a": "rpm -Uvh",
+      "b": "make install",
+      "c": "./configure",
+      "d": "dpkg -i"
+    },
+    "correct": "d"
+  },
+  "Stop a command and resume with fg or bg": {
+    "answers": {
+      "a": "Ctrl+Z",
+      "b": "Ctrl+C",
+      "c": "Ctrl+D",
+      "d": "Ctrl+U"
+    },
+    "correct": "a"
+  },
+  "Repeat the last command": {
+    "answers": {
+      "a": "Ctrl+R",
+      "b": "<up arrow on keyboard>",
+      "c": "!!",
+      "d": "repeat"
+    },
+    "correct": "c"
+  },
+  "Erase the whole line in terminal without using backspace or delete keys": {
+    "answers": {
+      "a": "Ctrl+W",
+      "b": "Ctrl+U",
+      "c": "Ctrl+Alt+Enter",
+      "d": "Ctrl+Shift+Esc"
+    },
+    "correct": "b"
+  },
+  "Default package manager for Arch based linux": {
+    "answers": {
+      "a": "pacman",
+      "b": "yay",
+      "c": "brew",
+      "d": "apt"
+    },
+    "correct": "a"
+  },
+  "Find all instances of a file": {
+    "answers": {
+      "a": "find -a <file>",
+      "b": "locate <file>",
+      "c": "grep -r <pattern> <dir>",
+      "d": "grep <pattern> <files>"
+    },
+    "correct": "b"
+  },
+  "Show memory and swap usage": {
+    "answers": {
+      "a": "df",
+      "b": "du",
+      "c": "uname -a",
+      "d": "free"
+    },
+    "correct": "d"
+  },
+  "Show kernel information": {
+    "answers": {
+      "a": "uname -a",
+      "b": "whoami",
+      "c": "id",
+      "d": "uptime"
+    },
+    "correct": "a"
+  },
+  "Show CPU information": {
+    "answers": {
+      "a": "cat /proc/buddyinfo",
+      "b": "cat /proc/meminfo",
+      "c": "cat /proc/cpuinfo",
+      "d": "locate cpuinfo"
+    },
+    "correct": "c"
+  },
+  "Continue a stopped download": {
+    "answers": {
+      "a": "wget <file>",
+      "b": "wget -x <file>",
+      "c": "wget -c <file>",
+      "d": "wget -nv <file>"
+    },
+    "correct": "c"
+  },
+  "Copy dir1 to dir2; create dir2 if it doesn't already exit": {
+    "answers": {
+      "a": "cp dir1 dir2",
+      "b": "cp -f dir1 dir2",
+      "c": "mv dir1 dir2",
+      "d": "cp -r dir1 dir2"
+    },
+    "correct": "d"
+  },
+  "Display all running processes": {
+    "answers": {
+      "a": "ps",
+      "b": "top",
+      "c": "fg",
+      "d": "task manager"
+    },
+    "correct": "b"
+  },
+  "Output all the contents of a file": {
+    "answers": {
+      "a": "more",
+      "b": "head",
+      "c": "tail",
+      "d": "foot"
+    },
+    "correct": "a"
+  },
+  "Show the working directory and show contents of directory": {
+    "answers": {
+      "a": "cd dir && ls",
+      "b": "mkdir dir && pwd",
+      "c": "pwd && ls",
+      "d": "pwd || ls"
+    },
+    "correct": "c"
+  },
+  "Create or update a file": {
+    "answers": {
+      "a": "touch",
+      "b": "rm",
+      "c": "chmod +x",
+      "d": "cat"
+    },
+    "correct": "a"
+  },
+  "Create a virtual environment for a specific version of Python": {
+    "answers": {
+      "a": "virtualenv venv",
+      "b": "pip install virtualenv",
+      "c": "python venv",
+      "d": "virtualenv -p /usr/bin/python3.8 py3.8_venv"
+    },
+    "correct": "d"
+  },
+  "Best command to specifically find just a binary within the PATH variable": {
+    "answers": {
+      "a": "locate",
+      "b": "whereis",
+      "c": "find",
+      "d": "which"
+    },
+    "correct": "d"
+  },
+  "Display a list of all processes running on a system and then send the output to grep to see if apache2 is running": {
+    "answers": {
+      "a": "ps grep apache2",
+      "b": "ps aux | grep apache2",
+      "c": "ps aux grep apache2>",
+      "d": "top | apache2"
+    },
+    "correct": "b"
+  },
+  "What command will let you search for terms or text patterns and let you replace it with another term?": {
+    "answers": {
+      "a": "sed",
+      "b": "replace",
+      "c": "locate -r <regexp>",
+      "d": "locate -w"
+    },
+    "correct": "a"
+  },
+  "Change the owner of 'myfile' to the user 'roxxane'": {
+    "answers": {
+      "a": "chown myfile > roxanne",
+      "b": "sudo chown roxxanne > myfile",
+      "c": "chown roxxanne myfile",
+      "d": "sudo chown roxanne myfile"
+    },
+    "correct": "d"
+  },
+  "What is the numerical representation of the SUID bit and where is it set when changing file permissions?": {
+    "answers": {
+      "a": "4 and before permission set",
+      "b": "2 and after permission set",
+      "c": "1 and after permission set",
+      "d": "0 and before permission set"
+    },
+    "correct": "a"
+  },
+  "What is the numerical representation of the SGID (set group id) bit?": {
+    "answers": {
+      "a": "4",
+      "b": "2",
+      "c": "1",
+      "d": "0"
+    },
+    "correct": "b"
+  },
+  "What is the numerical representation of the sticky bit and where is it set when changing file permissions": {
+    "answers": {
+      "a": "4 and before permission set",
+      "b": "2 and after permission set",
+      "c": "1 and before permission set",
+      "d": "0 and after permission set"
+    },
+    "correct": "c"
+  },
+  "Where is the sources file in a Debian system with respect to package repositories?": {
+    "answers": {
+      "a": "/etc/PackageKit/PackageKit.conf",
+      "b": "/etc/hosts",
+      "c": "/etc/apt/apt.conf.d",
+      "d": "/etc/apt/sources.list"
+    },
+    "correct": "d"
+  },
+  "Create an archive with multiple files": {
+    "answers": {
+      "a": "tar xvf mytarfile.tar myfile1 myfile2",
+      "b": "tar cvf mytarfile.tar myfile1 myfile2",
+      "c": "gzip mytarfile.gz myfile1 myfile2",
+      "d": "gzip cvf mytarfile.gz myfile1 myfile2"
+    },
+    "correct": ""
+  },
+  "When you ls the /dev directory, the first bit on the line before permissions is a 'b', what type of device is it?": {
+    "answers": {
+      "a": "character",
+      "b": "block",
+      "c": "pipe",
+      "d": "socket"
+    },
+    "correct": ""
+  },
+  "Which pseudo device accepts and discards all input and produces no output?": {
+    "answers": {
+      "a": "/dev/random",
+      "b": "/dev/zero",
+      "c": "/dev/null",
+      "d": "/dev/hda"
+    },
+    "correct": "c"
+  },
+  "Create a name for your own terminal command or sequence of commands": {
+    "answers": {
+      "a": "mv",
+      "b": "uname",
+      "c": "w",
+      "d": "alias"
+    },
+    "correct": "d"
+  },
+  "Retrieve information and files from URLs or internet addresses": {
+    "answers": {
+      "a": "curl",
+      "b": "git clone",
+      "c": "apt",
+      "d": "links"
+    },
+    "correct": "a"
+  },
+  "Show the size, used space, and available space of mounted filesystems": {
+    "answers": {
+      "a": "free",
+      "b": "df",
+      "c": "diff",
+      "d": "top"
+    },
+    "correct": "b"
+  },
+  "Obtain only the kernel release information": {
+    "answers": {
+      "a": "uname -a",
+      "b": "uname -s",
+      "c": "uname -r",
+      "d": "uname -v"
+    },
+    "correct": "c"
+  }
+}
